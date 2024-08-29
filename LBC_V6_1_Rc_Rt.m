@@ -50,7 +50,7 @@ dCdev = FdCdev/(FC0*(1-FC0))*(C0*(1-C0)) / FdT*dT;
 %% Form a [R_C = dC/dC_dev] -> [t_cha/tau] lookup table
 % Reading in transient thermodiffusion data calculated with Fortran custom code, working fluid is NaCl
 % ST_NaCl, using (Romer, 2013, JCP_B); D_NaCl, using (Caldwell, 1973)
-fname=sprintf('NaClResults_40_60.txt');
+fname=sprintf('transientC.txt');
 M1 = readmatrix(fname);
 time = M1(:,1);
 y = M1(:,2);
