@@ -220,7 +220,7 @@ Hrange = 1:5; % [mm]
 Nfull = Nfull_rec(optimal_index);
 Mlong = Mlong_rec(optimal_index);
 [lgdtxt, Pdrop_rec, flux, optimalYield] = parameters(totalA, targetRR, height, optmialcelltime, Hrange, aspectRrange, dT, Nfull, Mlong);
-flux = flux/R_T;
+flux = flux/(R_T/100);
 %Pressure drop as a function of cell parameters
 subplot(2,3,5)
 plot(Hrange,Pdrop_rec/1E3,"o","linewidth", 2)
