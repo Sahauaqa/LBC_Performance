@@ -54,7 +54,7 @@ fname=sprintf('transientC.txt');
 M1 = readmatrix(fname);
 time = M1(:,1);
 y = M1(:,2);
-Cr = M1(:,6);
+Cr = M1(:,3);
 height = 1; % Channel height [mm]
 
 nth = find(time>0,1)-1;
@@ -502,5 +502,6 @@ Meq = Meq/2+0.5; %Convert to full-length cell
 % higherC = higherM/higherV;
 % Cyield= higherC;
 end
+
 
 
